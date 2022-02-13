@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getTodayDate()">
+    <form action="">
+      <input
+        type="text"
+        value=""
+        placeholder="YYYY-MM-DD"
+        name="date"
+        id="date"
+      />
+      <div class="btn" onclick="getDate()">Get Image</div>
+    </form>
+    <h1 id="day"></h1>
+    <h3 id="title"></h3>
+    <img id="image" src="#" alt="" />
+    <p id="ex"></p>
+  </body>
+  <script src="script.js"></script>
+</html>
