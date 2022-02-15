@@ -1,3 +1,10 @@
+function keyDown() {
+  if (event.keyCode == 13) {
+    getDate();
+    event.preventDefault();
+  }
+}
+
 function getDate() {
   var dateTxt = document.getElementById("date").value;
   fetch(
